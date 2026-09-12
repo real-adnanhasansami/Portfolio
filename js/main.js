@@ -87,3 +87,5 @@ if (subscribeForm) {
     }
   });
 }
+console.log("%c👋 Hey, curious developer!", "font-size:16px; font-weight:bold; color:#2A5457;");
+console.log("%cThis site was hand-built by Adnan Hasan Sami — designed, deployed, and wired up entirely from VS Code, GitHub, Vercel, and Firebase, no coding background going in. If you're hiring or collaborating, say hi: adnansite01@gmail.com", "font-size:13px; color:#55565C;");
