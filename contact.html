@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+<style>body{visibility:hidden;}</style>
+</head>
+<body>
+
+<div id="site-header"></div>
+
+<main>
+  <div class="page-header">
+    <div class="container">
+      <span class="eyebrow">Contact</span>
+      <h1>Let's talk about your project</h1>
+    </div>
+  </div>
+
+  <!-- =====================================================================
+       CONTACT FORM + DIRECT INFO
+       ===================================================================== -->
+  <section class="section">
+    <div class="container contact-grid">
+      <div>
+        <form class="contact-form" id="contactForm">
+          <div class="field">
+            <label for="cf-name">Name</label>
+            <input type="text" id="cf-name" name="name" required />
+          </div>
+          <div class="field">
+            <label for="cf-email">Email</label>
+            <input type="email" id="cf-email" name="email" required />
+          </div>
+          <div class="field">
+            <label for="cf-message">Message</label>
+            <textarea id="cf-message" name="message" required></textarea>
+          </div>
+          <!-- honeypot field: invisible to real people, bots often fill it in -->
+          <div class="field" style="position:absolute; left:-9999px;" aria-hidden="true">
+            <label for="cf-website">Website</label>
+            <input type="text" id="cf-website" name="website" tabindex="-1" autocomplete="off" />
+          </div>
+          <button type="submit" class="btn btn--primary">Send message</button>
+          <p class="form-status" id="formStatus"></p>
+        </form>
+      </div>
+      <div class="contact-direct">
+        <p>Prefer email, phone, or a quick call? Any of these work.</p>
+        <p><a href="#" data-contact-email>Add your email in Site Settings</a></p>
+        <p><a href="#" data-contact-phone>Add your phone in Site Settings</a></p>
+        <p><a href="#" class="btn btn--outline is-hidden-until-set" data-booking-link style="display:none;">Book a call</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       FAQ
+       ===================================================================== -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">FAQ</span>
+        <h2>Common questions</h2>
+      </div>
+      <div class="faq-list" id="faqList"></div>
+    </div>
+  </section>
+
+  <div id="customBlocks" data-page-slug="contact"></div>
+
+</main>
+
+<div id="site-footer"></div>
+
+<script type="module" src="js/firebase-config.js"></script>
+<script type="module" src="js/common.js"></script>
+<script type="module" src="js/content-loader.js"></script>
+<script type="module" src="js/main.js"></script>
+
+</body>
+</html>

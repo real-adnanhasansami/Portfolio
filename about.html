@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>About — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+<style>body{visibility:hidden;}</style>
+</head>
+<body>
+
+<div id="site-header"></div>
+
+<main>
+
+  <!-- ===================================================================
+       PAGE HEADER
+       =================================================================== -->
+  <div class="page-header">
+    <div class="container">
+      <span class="eyebrow">About</span>
+      <h1>A bit more about how I work</h1>
+    </div>
+  </div>
+
+  <!-- ===================================================================
+       ABOUT INTRO + QUICK FACTS
+       =================================================================== -->
+  <section class="section">
+    <div class="container about-grid">
+      <div class="about-body">
+        <p id="aboutIntro">Add your About text from the admin panel's "About Page Intro" tab.</p>
+      </div>
+      <dl class="about-facts" id="aboutFactsList"></dl>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       SKILLS
+       =================================================================== -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Skills</span>
+        <h2>What I bring to a project</h2>
+      </div>
+      <div class="skills-columns" id="skillsColumns"></div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       EXPERIENCE (timeline)
+       =================================================================== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Experience</span>
+        <h2>Where I've worked</h2>
+      </div>
+      <div class="timeline" id="experienceTimeline"></div>
+    </div>
+  </section>
+
+
+  <div id="customBlocks" data-page-slug="about"></div>
+
+</main>
+
+<div id="site-footer"></div>
+
+<script type="module" src="js/firebase-config.js"></script>
+<script type="module" src="js/common.js"></script>
+<script type="module" src="js/content-loader.js"></script>
+<script type="module" src="js/main.js"></script>
+
+</body>
+</html>
